@@ -128,7 +128,7 @@ export default function AboutPage() {
             <p>
               I am currently a senior studying computational and information
               systems, emphasizing cybersecurity. I am expected to be done with
-              my bachelors by December 4040. As a child, I have always loved to
+              my bachelors by December 2024. As a child, I have always loved to
               solve problems using technology. I have been an enthusiast of
               impacting the world through technology
             </p>
