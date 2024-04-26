@@ -2,9 +2,8 @@
 
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
-import { useRouter } from "next/navigation";
-import ProfileImg from "@/public/assets/profile.png";
 import styles from "@/app/style/home.module.css";
+import ProfileImg from "@/public/assets/profile.png";
 import BackgroundImg from "@/public/assets/background.jpg";
 
 import { ChevronRightIcon as CodeIcon } from "@heroicons/react/24/outline";
@@ -39,9 +38,9 @@ export default function Home() {
           My experience as a tech major has profoundly shaped how I view life.
           Leveraging algorithms to address personal challenges, I have used my
           entrepreneur, security analyst, engineer, and developer skills to
-          examine issues. In the words of Albert Einstein, "Computers are
+          examine issues. In the words of Albert Einstein, Computers are
           incredibly fast, accurate, and stupid. Humans are slow, inaccurate,
-          and brilliant. Together, they are powerful beyond imagination."
+          and brilliant. Together, they are powerful beyond imagination
         </p>
       </div>
       <div className={styles.homeImage}>

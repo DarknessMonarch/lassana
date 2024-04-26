@@ -17,6 +17,7 @@ export default function ContactPage() {
         className={styles.contactImageB}
         src={contact}
         alt="coding image"
+        width={200}
         priority
       />    
    
