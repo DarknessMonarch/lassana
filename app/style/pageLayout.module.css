@@ -54,6 +54,6 @@
   }
 
   .pageContentLayout {
-    overflow-y: hidden;
+    overflow-y: auto;
   }
 }

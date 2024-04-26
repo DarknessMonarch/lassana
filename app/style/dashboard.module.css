@@ -113,8 +113,9 @@
     display: none;
   }
 
-
+ 
   .dashContainerTop {
+    gap: 20px;
     display: flex;
     padding: 10px;
     height: fit-content;

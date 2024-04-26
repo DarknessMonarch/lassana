@@ -1,11 +1,11 @@
 import styles from "@/app/style/pageLayout.module.css";
 import Dashboard from "@/app/components/Dashboard";
-import { Inclusive_Sans } from "next/font/google";
+import { Coda } from "next/font/google";
 import Navbar from "@/app/components/Navbar";
 import { Toaster } from "react-hot-toast";
 import "@/app/style/global.css";
 
-const Inclusive = Inclusive_Sans({ weight: "400", subsets: ["latin"] });
+const coda = Coda({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   metadataBase: new URL("http://www.lassanability.com/"),
@@ -49,7 +49,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={Inclusive.className}>
+      <body className={coda.className}>
         <Toaster
           position="top-right"
           reverseOrder={false}

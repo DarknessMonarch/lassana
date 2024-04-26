@@ -44,9 +44,12 @@
     cursor: pointer;
     font-size: 1.2rem;
     border-radius: 12px;
-    background-color: transparent;
-    color: var(--tertiary-color);
     border: 1px dotted var(--tertiary-color);
+  }
+
+  .AboutDownload a {
+    color: var(--tertiary-color);
+
   }
 
   .AboutDownload:hover {
@@ -54,6 +57,11 @@
     background-color: var(--tertiary-color);
     border: 1px solid var(--tertiary-color);
   }
+
+  .AboutDownload:hover a {
+    color: var(--background-color);
+  }
+
 
   .aboutImage {
     border-radius: 360%;
@@ -171,6 +179,128 @@
     font-size: 1rem;
     color: var(--tertiary-color);
   }
+
+  .AboutSkills {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .AboutSkills h1 {
+    font-size: 1.4rem;
+    color: var(--tertiary-color);
+  }
+
+  .SkillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .SkillsWrapper {
+    gap: 10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .SkillsWrapper h4 {
+    font-size: .8rem;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+
+  .SkillsImage {
+    width:50px;
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .aboutRow {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    align-items: top;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+  .abouteducation {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    height: fit-content;
+    flex-direction: column;
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .abouteducation h3 {
+    font-size: 1;
+    color: var(--tertiary-color);
+  }
+
+  .aboutTimelineItem {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    margin: 0 10px;
+    flex-direction: column;
+    border-left: 1px dotted var(--tertiary-color);
+  }
+
+  .aboutTimelineItem ul {
+    margin: 10px;
+    padding: 10px;
+    list-style-type: square;
+  }
+
+  .aboutTimelineItem ul li {
+    font-size: .8rem;
+    font-weight: 100;
+  }
+
+  .aboutTimelineInfoH {
+    gap: 10px;
+    display: flex;
+    align-items: center
+  }
+
+  .aboutTimelineInfoH h6 {
+    font-size: .8rem;
+    font-weight: 300;
+  }
+
+  .aboutTimelineItem h4 {
+    font-size: .8rem;
+    font-weight: 300;
+    color: var(--tertiary-color);
+  }
+
+  .aboutTimelineItem span {
+    font-size: .8rem;
+    font-weight: 300;
+  }
+
+
+  
+  .TimelineCircle {
+    background-color: var(--tertiary-color);
+    border-radius: 360%;
+    height: 20px;
+    width:20px;
+  }
+
+
 }
 
 /* using it as global style for larger devices  */
@@ -235,4 +365,25 @@
     bottom: 80px;
     visibility: hidden;
   }
+
+  .SkillsWrapper {
+    width: 250px;
+    height: 250px;
+  }
+
+  .SkillsImage {
+    width:80px;
+    height: 80px;
+  }
+
+  .SkillsWrapper h4 {
+    font-size: .9rem;
+  }
+
+  .aboutRow {
+    flex-direction:row ;
+  }
+
+  
+
 }

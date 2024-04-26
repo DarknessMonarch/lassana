@@ -5,7 +5,7 @@ export default function ServicePage() {
 
 
   return (
-    <div className={styles.AboutContainer}>
+    <div className={styles.ServicesContainer}>
     
     </div>
   );

@@ -1,0 +1,150 @@
+@media screen {
+  .ProjectContainer {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .ProjectContainer h1 {
+    color: var(--tertiary-color);
+  }
+
+  .ProjectContainerInner {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ProjectContainerNav {
+    gap: 30px;
+    display: flex;
+    padding: 20px 0;
+    overflow: hidden;
+    overflow-x: auto;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .Projectbutton {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 100;
+    background: transparent;
+    text-transform: capitalize;
+    color: var(--background-color);
+  }
+
+  .Projectbutton:hover {
+    color: var(--tertiary-color);
+  }
+
+  .active {
+    color: var(--tertiary-color);
+    text-decoration: underline;
+  }
+
+  .PortfolioContainer {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .PortfolioContainer > * {
+    animation: slideIn 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .PortfolioItem {
+    position: relative;
+    cursor: pointer;
+    height: 400px;
+    width: 100%;
+  }
+
+
+
+  .PortfolioInfo {
+    background: rgba(238, 238, 238, 0.05);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border-radius: 10px ;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: var(--background-color);
+    position: absolute;
+    display: none;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .PortfolioInfo h4 {
+    padding: 10px;
+    font-size: .8rem;
+    font-weight: 400;
+    border-radius: 12px;
+    color: var(--background-color);
+    background-color: var(--dark-primary-color);
+  }
+
+  .PortfolioInfo p {
+    font-size: 0.8rem;
+  }
+
+  .PortfolioItem:hover .PortfolioInfo {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .PortfolioItem:hover .PortfolioImage{
+    filter: brightness(50%);
+
+  }
+
+  .PortfolioImage{ 
+    object-position: center;
+  }
+
+  .OpenpdfIcon {
+    top: -40px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    z-index: 100px;
+    cursor: pointer;
+    position: absolute;
+    color: var(--background-color);
+  }
+  
+  .OpenpdfIcon:hover {
+    color: var(--tertiary-color);
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .ProjectContainer {
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .PortfolioItem {
+    height: 400px;
+    width: 300px;
+  }
+}

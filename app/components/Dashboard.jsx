@@ -30,7 +30,7 @@ export default function DashboardComponent() {
         objectFit="contain"
         priority
       />
-      <Link href="/page/blog" className={styles.dashLinkContainer}>
+      {/* <Link href="/page/blog" className={styles.dashLinkContainer}>
           <div
             className={`${styles.innerDashLink} ${
               pathname === "/page/blog" ? styles.activeDash : ""
@@ -39,7 +39,7 @@ export default function DashboardComponent() {
             <BlogIcon className={styles.dashIcon} alt="projects icon" />
             <h1>Blog</h1>
           </div>
-        </Link>
+        </Link> */}
         <Link href="/page/contact" className={styles.dashLinkContainer}>
           <div
             className={`${styles.innerDashLink} ${
@@ -60,7 +60,7 @@ export default function DashboardComponent() {
             <h1>Projects</h1>
           </div>
         </Link>
-        <Link href="/page/services" className={styles.dashLinkContainer}>
+        {/* <Link href="/page/services" className={styles.dashLinkContainer}>
           <div
             className={`${styles.innerDashLink} ${
               pathname === "/page/services" ? styles.activeDash : ""
@@ -69,7 +69,7 @@ export default function DashboardComponent() {
             <Services className={styles.dashIcon} alt="calculated icon" />
             <h1>Services </h1>
           </div>
-        </Link>
+        </Link> */}
         <Link href="/page/about" className={styles.dashLinkContainer}>
           <div
             className={`${styles.innerDashLink} ${

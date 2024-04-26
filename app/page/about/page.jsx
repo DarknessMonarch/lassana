@@ -2,26 +2,18 @@
 import Image from "next/image";
 import AboutImg from "@/public/assets/about.jpg";
 import styles from "@/app/style/about.module.css";
+import HackingIcon from "@/public/assets/Hacking.png";
 import TwitterIcon from "@/public/icons/TwitterIcon.svg";
 import FacebookIcon from "@/public/icons/FacebookIcon.svg";
 import LinkedinIcon from "@/public/icons/LinkedinIcon.svg";
 import WhatsappIcon from "@/public/icons/WhatsappIcon.svg";
+import SolidworkIcon from "@/public/assets/Solidwork.png";
+import LeadershipIcon from "@/public/assets/Leadership.png";
 import InstagramIcon from "@/public/icons/InstagramIcon.svg";
+import EngineeringIcon from "@/public/assets/engineering.png";
+import CommunicationIcon from "@/public/assets/Communication.png";
 
-const downloadFile = () => {
-  const fileName = "resume.pdf";
-  const fileUrl = "/file/Resume.pdf";
-
-  const link = document.createElement("a");
-  link.href = fileUrl;
-  link.download = fileName;
-
-  document.body.appendChild(link);
-
-  link.click();
-
-  document.body.removeChild(link);
-};
+import { CalendarDaysIcon } from "@heroicons/react/24/outline";
 
 export default function AboutPage() {
   const phoneNumber = "+1(484)-744-0421";
@@ -44,10 +36,6 @@ export default function AboutPage() {
 
   const openTwitter = () => {
     window.open("https://", "_blank");
-  };
-
-  const DownloadResume = () => {
-    downloadFile();
   };
 
   return (
@@ -128,9 +116,12 @@ export default function AboutPage() {
               ></div>
             </div>
           </div>
-          <button className={styles.AboutDownload} onClick={DownloadResume}>
-            Download Resume
-          </button>
+
+          <div className={styles.AboutDownload}>
+            <a class="portfolio-btn" href="/file/Resume.pdf" download id="btn">
+              Download CV
+            </a>
+          </div>
         </div>
         <div className={styles.AboutInfo}>
           <h1>Biography</h1>
@@ -138,7 +129,7 @@ export default function AboutPage() {
             <p>
               I am currently a senior studying computational and information
               systems, emphasizing cybersecurity. I am expected to be done with
-              my bachelor's by December 2020. As a child, I have always loved to
+              my bachelors by December 4040. As a child, I have always loved to
               solve problems using technology. I have been an enthusiast of
               impacting the world through technology
             </p>
@@ -167,7 +158,7 @@ export default function AboutPage() {
               </div>
               <div className={styles.AboutListHalfInfo}>
                 <h2>Address:</h2>
-                <p>California</p>
+                <p>Detroit, Michigan 48221</p>
               </div>
               <div className={styles.AboutListHalfInfo}>
                 <h2>Status:</h2>
@@ -192,58 +183,304 @@ export default function AboutPage() {
         </div>
       </div>
       <div className={styles.AboutSkills}>
-        <h1>My skills</h1>
+        <h1>Languages and Skills</h1>
         <div className={styles.SkillsContainer}>
           <div className={styles.SkillsWrapper}>
             <Image
-              src={WhatsappIcon}
-              alt="Whatsapp  icon"
-              height={20}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+              className={styles.SkillsImage}
+              alt="C++  icon"
+              height={40}
+              width={40}
               priority
             />
-            <h4></h4>
+            <h4>C++</h4>
+          </div>
+
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg"
+              className={styles.SkillsImage}
+              alt="golang icon"
+              height={40}
+              width={40}
+              priority
+            />
+            <h4>Go</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              className={styles.SkillsImage}
+              alt="python icon"
+              height={40}
+              width={40}
+              priority
+            />
+            <h4>Python</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+              className={styles.SkillsImage}
+              alt="css icon"
+              height={40}
+              width={40}
+              priority
+            />
+            <h4>Css</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+              className={styles.SkillsImage}
+              alt="html icon"
+              height={40}
+              width={40}
+              priority
+            />
+            <h4>Html5</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src={EngineeringIcon}
+              className={styles.SkillsImage}
+              alt="Engineering icon"
+              height={40}
+              priority
+            />
+            <h4>Engineering</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src={SolidworkIcon}
+              className={styles.SkillsImage}
+              alt="Solidwork icon"
+              height={40}
+              priority
+            />
+            <h4>Solidwork</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src={HackingIcon}
+              className={styles.SkillsImage}
+              alt="Ethical icon"
+              height={40}
+              priority
+            />
+            <h4>Ethical Hacking</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src={LeadershipIcon}
+              className={styles.SkillsImage}
+              alt="Leadership icon"
+              height={40}
+              priority
+            />
+            <h4>Leadership and Teamwork</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src={CommunicationIcon}
+              className={styles.SkillsImage}
+              alt="Communication icon"
+              height={40}
+              priority
+            />
+            <h4>Communication and Presentation</h4>
           </div>
         </div>
       </div>
-      <div className="row">
-        <div className="education padd-15">
-          <h3 className="title">Education</h3>
-          <div className="row">
-            <div className="timeline-box padd-15">
-              <div className="timeline shadow-dark">
-                {/* Start*/}
-                <div className="timeline-item">
-                  <div className="circle-dot" />
-                  <h6 className="timeline-date">
-                    <i className="fa fa-calendar" /> 2020 to Present
-                  </h6>
-                  <h4 className="timeline-title">Cyber security</h4>
-                  <p className="timeline-text">Graduating this month</p>
+      <div className={styles.aboutRow}>
+     
+        {/* Start*/}
+        <div className={styles.abouteducation}>
+          <h3>Exprience</h3>
+          <div className={styles.aboutTimeline}>
+            {/* Start*/}
+            <div className={styles.aboutTimelineInner}>
+              <div className={styles.TimelineCircle} />
+              <div className={styles.aboutTimelineItem}>
+                <div className={styles.aboutTimelineInfoH}>
+                  <CalendarDaysIcon
+                    className={styles.timelineIcon}
+                    height={20}
+                    alt="Calendar icon"
+                  />{" "}
+                  <h6>October 2023 - December 2023</h6>
                 </div>
-                {/* end */}
+                <h4>SOFTWARE DEVELOPER</h4>
+                <span>Delaware County Community College, Media, PA</span>
+                <ul>
+                  <li>
+                    Headed a group of developers in developing a database for
+                    loading docker
+                  </li>
+                  <li>
+                    Was responsible for selling the idea to the loading dock
+                  </li>
+                </ul>
               </div>
+              {/* end */}
+            </div>
+            {/* end */}
+            {/* Start*/}
+            <div className={styles.aboutTimelineInner}>
+              <div className={styles.TimelineCircle} />
+              <div className={styles.aboutTimelineItem}>
+                <div className={styles.aboutTimelineInfoH}>
+                  <CalendarDaysIcon
+                    className={styles.timelineIcon}
+                    height={20}
+                    alt="Calendar icon"
+                  />{" "}
+                  <h6>December 2020 - December 2021</h6>
+                </div>
+                <h4>MACHINE LAB ASSISTANCE</h4>
+                <span>
+                  Delaware county community college Media, PENNSYLVANIA{" "}
+                </span>
+                <ul>
+                  <li>
+                    Performed routine maintenance on machinery equipment to
+                    maintain optimal performance.
+                  </li>
+                  <li>
+                    Demonstrated excellent attention to detail throughout all
+                    stages of the welding process
+                  </li>
+                  <li>
+                    Maintained detailed records of daily production activities
+                    for review by management personnel.
+                  </li>
+                </ul>
+              </div>
+              {/* end */}
+            </div>
+            {/* end */}
+            {/* Start*/}
+            <div className={styles.aboutTimelineInner}>
+              <div className={styles.TimelineCircle} />
+              <div className={styles.aboutTimelineItem}>
+                <div className={styles.aboutTimelineInfoH}>
+                  <CalendarDaysIcon
+                    className={styles.timelineIcon}
+                    height={20}
+                    alt="Calendar icon"
+                  />{" "}
+                  <h6>January 2019 - April 2019</h6>
+                </div>
+                <h4>IT INTERN</h4>
+                <span>Tamma Cooporation Monrovia, MONTSERRADO</span>
+                <ul>
+                  <li>
+                    Work as an IT support staff for every newly developed
+                    software.
+                  </li>
+                  <li>
+                    Keep every new software effective by reporting a fault to
+                    the senior IT team.
+                  </li>
+                </ul>
+              </div>
+              {/* end */}
+            </div>
+            {/* end */}
+            {/* Start*/}
+            <div className={styles.aboutTimelineInner}>
+              <div className={styles.TimelineCircle} />
+              <div className={styles.aboutTimelineItem}>
+                <div className={styles.aboutTimelineInfoH}>
+                  <CalendarDaysIcon
+                    className={styles.timelineIcon}
+                    height={20}
+                    alt="Calendar icon"
+                  />{" "}
+                  <h6>June 2016 - January 2017</h6>
+                </div>
+                <h4>INTERN</h4>
+                <span>SCRIMEX OIL & GAS
+Monrovia, MONTSERRADO</span>
+                <ul>
+                  <li>
+                  Enter data on trucks that carry out company
+consignment.
+                  </li>
+                  <li>
+                  Maintain documents and sort data of consignment
+
+                  </li>
+                  <li>
+                    WPerform routine check on consignment delivery
+                  </li>
+                </ul>
+              </div>
+              {/* end */}
+            </div>
+            {/* end */}
+          </div>
+        </div>
+        {/* end */}
+           {/* Start*/}
+           <div className={styles.abouteducation}>
+          <h3>Education</h3>
+          <div className={styles.aboutTimeline}>
+            {/* Start*/}
+            <div className={styles.aboutTimelineInner}>
+              <div className={styles.TimelineCircle} />
+              <div className={styles.aboutTimelineItem}>
+                <div className={styles.aboutTimelineInfoH}>
+                  <CalendarDaysIcon
+                    className={styles.timelineIcon}
+                    height={20}
+                    alt="Calendar icon"
+                  />{" "}
+                  <h6>Completed</h6>
+                </div>
+                <h4>ASSOCIATE OF SCIENCE IN COMPUTER SCIENCE</h4>
+                <span>Delaware County Community College, Media, PA</span>
+              </div>
+              {/* end */}
+            </div>
+            {/* Start*/}
+            <div className={styles.aboutTimelineInner}>
+              <div className={styles.TimelineCircle} />
+              <div className={styles.aboutTimelineItem}>
+                <div className={styles.aboutTimelineInfoH}>
+                  <CalendarDaysIcon
+                    className={styles.timelineIcon}
+                    height={20}
+                    alt="Calendar icon"
+                  />{" "}
+                  <h6>Completed</h6>
+                </div>
+                <h4>CERTIFICATIONS</h4>
+                <span>Introduction to Python for Cybersecurity </span>
+              </div>
+              {/* end */}
+            </div>
+            {/* Start*/}
+            <div className={styles.aboutTimelineInner}>
+              <div className={styles.TimelineCircle} />
+              <div className={styles.aboutTimelineItem}>
+                <div className={styles.aboutTimelineInfoH}>
+                  <CalendarDaysIcon
+                    className={styles.timelineIcon}
+                    height={20}
+                    alt="Calendar icon"
+                  />{" "}
+                  <h6>Completed</h6>
+                </div>
+                <h4>BACHELOR IN COMPUTER & INFO SYSTEM IN CYBER SECURITY</h4>
+                <span>University of Detroit Mercy, Detroit, MI </span>
+              </div>
+              {/* end */}
             </div>
           </div>
         </div>
-        <div className="experience padd-15">
-          <h3 className="title">Experience</h3>
-          <div className="row">
-            <div className="timeline-box padd-15">
-              <div className="timeline shadow-dark">
-                {/*  start */}
-                <div className="timeline-item">
-                  <div className="circle-dot" />
-                  <h6 className="timeline-date">
-                    <i className="fa fa-calendar" /> 2019 to Present
-                  </h6>
-                  <h4 className="timeline-title">Hacking</h4>
-                  <p className="timeline-text">still hacking</p>
-                </div>
-                {/* end */}
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* end */}
       </div>
     </div>
   );
