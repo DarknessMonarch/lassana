@@ -1,8 +1,8 @@
 export default function manifest() {
   return {
-    name: 'SploshEssenceAgency',
-    short_name: 'SploshEssenceAgency',
-    description: 'Get deals and brand promotions , apps and website with us easily and earn as an agent by doing promotions & refferals ',
+    name: 'Lasana',
+    short_name: 'Lasana',
+    description: 'Get cyber security experty, graphic designs and programming',
     start_url: '/',
     display: 'standalone',
     background_color: '#fff',

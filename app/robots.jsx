@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://SploshEssenceAgency.com/sitemap.xml',
+    sitemap: 'http://www.lassanability.com/sitemap.xml',
   }
 }

@@ -1,9 +1,9 @@
 {
-  "name": "433tip",
+  "name": "lassana",
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name": "BraveSou"
+    "name": "zero-stealth"
   },
   "scripts": {
     "dev": "next dev",

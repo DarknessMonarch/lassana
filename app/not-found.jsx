@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import NavBar from "@/app/components/NavBar";
 import NotFoundImage from "@/public/assets/logo.png";
 import styles from "@/app/style/notfound.module.css";
 

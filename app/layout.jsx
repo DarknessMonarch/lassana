@@ -3,20 +3,19 @@ import Dashboard from "@/app/components/Dashboard";
 import { Inclusive_Sans } from "next/font/google";
 import Navbar from "@/app/components/Navbar";
 import { Toaster } from "react-hot-toast";
-import Image from "next/image";
 import "@/app/style/global.css";
 
-const Inclusive = Inclusive_Sans({ weight: "400", subsets: ["latin-ext"] });
+const Inclusive = Inclusive_Sans({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
-  metadataBase: new URL("https://www.lassana.com/"),
+  metadataBase: new URL("http://www.lassanability.com/"),
   title: "Lassana - Portfolio",
   applicationName: "Lassana",
   author: "Lassana",
   images:
     "https://raw.githubusercontent.com/zero-stealth/lassana/master/src/assets/banner.png",
   description: "Get cyber security experty, graphic designs and programming",
-  metadataBase: new URL("https://www.lassana.com/"),
+  metadataBase: new URL("http://www.lassanability.com/"),
   keywords: [
     "Lassana",
     "Portfolio",
@@ -27,7 +26,7 @@ export const metadata = {
   openGraph: {
     title: "Lassana - Portfolio",
     description: "Get cyber security experty, graphic designs and programming",
-    url: "https://www.Lassana.com//",
+    url: "http://www.lassanability.com//",
     siteName: "Lassana",
     images:
       "https://raw.githubusercontent.com/zero-stealth/Lassana/master/src/assets/banner.png",
