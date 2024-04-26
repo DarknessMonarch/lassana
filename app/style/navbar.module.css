@@ -1,0 +1,57 @@
+@media screen {
+  .navContainer {
+    right: 0;
+    gap: 20px;
+    display: flex;
+    padding: 10px;
+    z-index: 100;
+    position: absolute;
+    align-items: center;
+  }
+
+
+  .logo {
+    width: 30px;
+    height: 100%;
+    display: none;
+    object-fit: contain;
+    object-position: center;
+  }
+
+
+  .batteryIcon {
+    height: 24px;
+    width: 24px;
+    color: var(--background-color);
+  }
+  
+  .navInner {
+    gap: 5px;
+    display: none;
+    font-size: .7rem;
+    align-items: center;
+  }
+
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .navInner {
+    display: flex;
+ 
+  }
+
+  .logo {
+    width: 20px;
+    display: flex;
+  }
+
+  .navContainer {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border-radius:0 0 10px 10px ;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}

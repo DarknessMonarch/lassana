@@ -1,0 +1,109 @@
+@media screen {
+    * {
+      /* dynamic style */
+      --primary-color: #041653;
+      --dark-primary-color: #01081d;
+      --light-primary-color: #042286;
+      --lighter-primary-color: #082480;
+      --dark-secondary-color: #6f2edf;
+      --secondary-color: #8138ffff;
+      --tertiary-color: #1fdbb9;
+      --dark-tertiary-color: #0da589;
+      --background-color: #fafafaff;
+      --light-background-color:  #e2e1e1;
+
+  
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  
+      /* global-width */
+      --side-bar-width: 10%;
+    }
+  
+    /* ::-webkit-scrollbar {
+      display: none;
+    } */
+  
+    body {
+      font-weight: 300;
+      color: var(--background-color);
+      background-color: var(--dark-primary-color);
+    }
+  
+    a,
+    router-link {
+      text-decoration: none;
+    }
+  
+    input {
+      outline: none;
+    }
+  
+    button {
+      outline: none;
+      border: none;
+    }
+  
+    input:focus,
+    input:hover {
+      outline: none;
+    }
+  
+    textarea {
+      outline: none;
+    }
+  
+    textarea:focus,
+    textarea:hover {
+      outline: none;
+    }
+  
+    select {
+      outline: none;
+    }
+  }
+  
+
+  .mobileIcon {
+    fill: var(--secondary-color);
+  }
+  
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--tertiary-color) var(--primary-color);
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--primary-color);
+    border-radius: 20px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+  }
+  
+  /* using it as global style for larger devices  */
+  @media only screen and (min-width: 48em) {
+    /* Works on Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  
+  /* ipad pro screens & laptop */
+  @media only screen and (min-width: 49em) and (max-width: 64em) {
+  }
+  
+  /* large screens : Desktop and 4k screens */
+  
+  @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  }
+  
+  /* 5k screens and above */
+  @media only screen and (min-width: 91em) {
+  }
+  

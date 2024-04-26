@@ -1,0 +1,59 @@
+@media screen {
+  .pageLayout {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+  }
+
+  .layoutContent {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border-radius:0 0 10px 10px ;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-top: none;
+  }
+
+  .layoutContentNav {
+    height: fit-content;
+  }
+
+  .pageContentLayout {
+    overflow: hidden;
+    overflow-y: auto;
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .pageLayout {
+    flex-direction: row;
+  }
+
+  .layoutContent {
+    display: flex;
+    min-height: auto;
+    align-items: flex-start;
+    justify-content: auto;
+    flex-direction: column;
+    background:none;
+    box-shadow:none;
+    backdrop-filter:none;
+    -webkit-backdrop-filter:none;
+    border-radius:none ;
+    border: none;
+  }
+
+  .pageContentLayout {
+    overflow-y: hidden;
+  }
+}

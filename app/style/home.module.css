@@ -1,0 +1,109 @@
+@media screen {
+  .homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .advertImage {
+    z-index: -100;
+    filter: brightness(50%);
+  }
+
+  .homeInfoContainer,
+  .homeImage {
+    position: relative;
+  }
+
+  .homeImage { 
+    width: 100%;
+    height:400px;
+  }
+
+  .homeInfoContainer {
+    gap: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .homeInfoContainer h6 {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 100;
+    border-radius: 12px;
+    width: fit-content;
+    background-color: var(--tertiary-color);
+  }
+
+  .homeInfoContainer h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .codeIconS {
+    height: 30px;
+    color: var(--tertiary-color);
+  }
+
+  .homeInfoContainer h2 {
+    gap: 10px;
+    display: flex;
+    font-size: .9rem;
+    align-items: center;
+  }
+
+  .homeInfoContainer h2 span {
+    background-color: none;
+    color: var(--tertiary-color);
+  }
+
+  .homeInfoContainer p {
+    font-weight: 100;
+    text-align: justify;
+  }
+
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .homeContainer {
+    height: 100%;
+    flex-direction: row;
+  }
+
+  .homeInfoContainer,
+  .homeImage {
+    flex: 50%;
+    position: relative;
+  }
+
+  .homeImage { 
+    height:100%;
+  }
+
+
+  .homeInfoContainer {
+    padding: 30px;
+  }
+
+  .homeInfoContainer h1 {
+    font-size: 2rem;
+  }
+
+  .homeInfoContainer h2 {
+    gap: 10px;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+  }
+
+  .codeIconS {
+    height: 40px;
+  }
+
+
+ 
+}
