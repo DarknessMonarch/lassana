@@ -13,7 +13,7 @@ export const metadata = {
   applicationName: "Lassana",
   author: "Lassana",
   images:
-    "https://raw.githubusercontent.com/zero-stealth/lassana/master/src/assets/banner.png",
+    "https://raw.githubusercontent.com/zero-stealth/lassana/master/public/assets/banner.png",
   description: "Get cyber security experty, graphic designs and programming",
   metadataBase: new URL("http://www.lassanability.com/"),
   keywords: [
@@ -29,7 +29,7 @@ export const metadata = {
     url: "http://www.lassanability.com//",
     siteName: "Lassana",
     images:
-      "https://raw.githubusercontent.com/zero-stealth/Lassana/master/src/assets/banner.png",
+      "https://raw.githubusercontent.com/zero-stealth/lassana/master/public/assets/banner.png",
   },
   robots: {
     index: false,

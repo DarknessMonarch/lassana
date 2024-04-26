@@ -76,7 +76,6 @@ export default function NavbarComponent() {
         src={LogoImg}
         alt="logo"
         height={30}
-        objectFit="contain"
         priority
       />
       {currentDay && currentTime && (

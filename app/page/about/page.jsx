@@ -49,7 +49,6 @@ export default function AboutPage() {
               alt="about image"
               layout="fill"
               quality={100}
-              objectFit="cover"
               priority
             />
             <div className={styles.aboutSocialWrapper}>

@@ -1,33 +1,15 @@
 @media screen {
-
-  .contactC {
-    gap: 20px;
+  .contactContain {
     display: flex;
-    padding: 20px;
-    position: relative;
+    height: 100vh;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
   }
-
- 
 }
 
-/* ipad pro screens & laptop */
-@media only screen and (min-width: 49em) and (max-width: 64em) {
-   .contactC {
-    width: 100%;
-    height: 100%;
-    flex-direction: row;
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .contactContain {
+    width: 100vw;
   }
-
-  .contactImageB {
-    width: 400px;
-  }
-
-  .contactImageA {
-    width: 300px;
-  }
-
-
 }
