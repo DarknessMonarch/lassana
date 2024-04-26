@@ -83,7 +83,6 @@
   }
 
   .dashLinkContainer:hover h1 {
-    display: flex;
     background-color: var(--dark-tertiary-color);
   }
 
@@ -111,6 +110,9 @@
 
   .logo {
     display: none;
+  }
+  .dashLinkContainer:hover h1 {
+    display: flex;
   }
 
  

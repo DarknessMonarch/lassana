@@ -10,10 +10,7 @@
     justify-content: center;
   }
 
-  .contactImageB , .contactImageA{
-    width: 100%;
-
-  }
+ 
 }
 
 /* ipad pro screens & laptop */
@@ -25,11 +22,11 @@
   }
 
   .contactImageB {
-    height: 400px;
+    width: 400px;
   }
 
   .contactImageA {
-    height: 300px;
+    width: 300px;
   }
 
 

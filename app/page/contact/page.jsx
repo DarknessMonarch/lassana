@@ -11,16 +11,17 @@ export default function ContactPage() {
         className={styles.contactImageA}
         src={coding}
         alt="coding image"
+        height={220}
         priority
       />
      <Image
         className={styles.contactImageB}
         src={contact}
         alt="coding image"
-        width={200}
+        height={220}
         priority
       />    
-   
+   {/*  */}
     </div>
   );
 }
