@@ -126,27 +126,13 @@ export default function AboutPage() {
           <h1>Biography</h1>
           <div className={styles.AboutDescription}>
             <p>
-              I am currently a senior studying computational and information
-              systems, emphasizing cybersecurity. I am expected to be done with
-              my bachelors by December 2024. As a child, I have always loved to
-              solve problems using technology. I have been an enthusiast of
-              impacting the world through technology
+              I recently graduated with a Bachelor's degree in Computational and Information Systems, with an emphasis in cybersecurity. As a child, I have always loved to solve problems using technology. I have been an enthusiast of impacting the world through technology.
             </p>
             <p>
-              I have tested my skills by helping build a system that solves
-              problems with loading dockers. I have also tested my engineering
-              skills by assembling a robotic car and using Arduino to give it a
-              command. I recently started a Tech company with 3 employees and
-              one investor which shows my leadership skill.
+              I have tested my skills by helping build a system that solves problems with loading dockers. I have also tested my engineering skills by assembling a robotic car and using Arduino to give it a command. I recently started a Tech company with 3 employees and one investor which shows my leadership skill.
             </p>
             <p>
-              My academic path has led me to specialize on computational and
-              information systems because I have a strong desire to use
-              technology to have a significant impact on the world. Having seen
-              how quickly technology is developing, I am confident that by
-              acquiring a broad range of skills in computer programming,
-              engineering, and cybersecurity analysis, I will be able to protect
-              and strengthen these advanced systems.
+              My academic path has led me to specialize in computational and information systems because I have a strong desire to use technology to have a significant impact on the world. Having seen how quickly technology is developing, I am confident that by acquiring a broad range of skills in computer programming, engineering, and cybersecurity analysis, I will be able to protect and strengthen these advanced systems.
             </p>
           </div>
           <div className={styles.AboutList}>
@@ -175,7 +161,7 @@ export default function AboutPage() {
               </div>
               <div className={styles.AboutListHalfInfo}>
                 <h2>Education:</h2>
-                <p>Graduate</p>
+                <p>Bachelor's Degree</p>
               </div>
             </div>
           </div>
@@ -206,6 +192,50 @@ export default function AboutPage() {
               priority
             />
             <h4>Go</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+              className={styles.SkillsImage}
+              alt="javascript icon"
+              height={40}
+              width={40}
+              priority
+            />
+            <h4>JavaScript</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+              className={styles.SkillsImage}
+              alt="typescript icon"
+              height={40}
+              width={40}
+              priority
+            />
+            <h4>TypeScript</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+              className={styles.SkillsImage}
+              alt="react icon"
+              height={40}
+              width={40}
+              priority
+            />
+            <h4>React</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+              className={styles.SkillsImage}
+              alt="nextjs icon"
+              height={40}
+              width={40}
+              priority
+            />
+            <h4>Next.js</h4>
           </div>
           <div className={styles.SkillsWrapper}>
             <Image
@@ -288,7 +318,62 @@ export default function AboutPage() {
               height={40}
               priority
             />
-            <h4>Communication and Presentation</h4>
+            <h4>Communication and Presentation</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
+              className={styles.SkillsImage}
+              alt="tensorflow icon"
+              height={40}
+              width={40}
+              priority
+            />
+            <h4>TensorFlow</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
+              className={styles.SkillsImage}
+              alt="pytorch icon"
+              height={40}
+              width={40}
+              priority
+            />
+            <h4>PyTorch</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
+              className={styles.SkillsImage}
+              alt="scikit-learn icon"
+              height={40}
+              width={40}
+              priority
+            />
+            <h4>Scikit-learn</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
+              className={styles.SkillsImage}
+              alt="numpy icon"
+              height={40}
+              width={40}
+              priority
+            />
+            <h4>NumPy</h4>
+          </div>
+          <div className={styles.SkillsWrapper}>
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+              className={styles.SkillsImage}
+              alt="pandas icon"
+              height={40}
+              width={40}
+              priority
+            />
+            <h4>Pandas</h4>
           </div>
         </div>
       </div>
@@ -296,7 +381,7 @@ export default function AboutPage() {
      
         {/* Start*/}
         <div className={styles.abouteducation}>
-          <h3>Exprience</h3>
+          <h3>Experience</h3>
           <div className={styles.aboutTimeline}>
             {/* Start*/}
             <div className={styles.aboutTimelineInner}>
@@ -412,7 +497,7 @@ consignment.
 
                   </li>
                   <li>
-                    WPerform routine check on consignment delivery
+                    Perform routine check on consignment delivery
                   </li>
                 </ul>
               </div>
