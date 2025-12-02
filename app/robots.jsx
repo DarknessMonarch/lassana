@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'http://www.lassanability.com/sitemap.xml',
+    sitemap: 'https://lassana.swiftsyn.com/sitemap.xml',
   }
 }

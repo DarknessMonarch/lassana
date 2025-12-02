@@ -8,14 +8,14 @@ import "@/app/style/global.css";
 const coda = Coda({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
-  metadataBase: new URL("http://www.lassanability.com/"),
+  metadataBase: new URL("https://lassana.swiftsyn.com/"),
   title: "Lassana - Portfolio",
   applicationName: "Lassana",
   author: "Lassana",
   images:
     "https://raw.githubusercontent.com/zero-stealth/lassana/master/public/assets/banner.png",
   description: "Get cyber security experty, graphic designs and programming",
-  metadataBase: new URL("http://www.lassanability.com/"),
+  metadataBase: new URL("https://lassana.swiftsyn.com/"),
   keywords: [
     "Lassana",
     "Portfolio",
@@ -26,7 +26,7 @@ export const metadata = {
   openGraph: {
     title: "Lassana - Portfolio",
     description: "Get cyber security experty, graphic designs and programming",
-    url: "http://www.lassanability.com//",
+    url: "https://lassana.swiftsyn.com/",
     siteName: "Lassana",
     images:
       "https://raw.githubusercontent.com/zero-stealth/lassana/master/public/assets/banner.png",
