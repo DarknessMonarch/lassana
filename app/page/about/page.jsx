@@ -117,7 +117,7 @@ export default function AboutPage() {
           </div>
 
           <div className={styles.AboutDownload}>
-            <a class="portfolio-btn" href="/file/Resume.pdf" download id="btn">
+            <a className="portfolio-btn" href="/file/Resume.pdf" download id="btn">
               Download Resume
             </a>
           </div>

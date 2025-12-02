@@ -93,7 +93,7 @@
   }
 
   .logoImg {
-    background-color: var(tertiary);
+    background-color: var(--tertiary);
     object-position: center;
     border-radius: 360px;
     object-fit: contain;
