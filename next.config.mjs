@@ -1,13 +1,19 @@
+module.exports = nextConfig;
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
-  webpack: (config) => {
-    config.externals.push('pino-pretty', 'lokijs', 'encoding');
-    return config;
+  webpack: config => {
+    config.externals.push('pino-pretty', 'lokijs', 'encoding')
+    return config
   },
   images: {
-    domains: ['cdn.hashnode.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.hashnode.com',
+        pathname: '/**',
+      },
+    ],
   },
-};
-
-module.exports = nextConfig;
+}
+export default nextConfig;
